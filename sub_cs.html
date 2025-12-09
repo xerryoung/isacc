@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/sub_cs.css">
   <title>isacc toast</title>
 </head>
 <body>
@@ -64,74 +64,85 @@
     </div>
   </header>
 
-  <!-- 메인 -->
+  <!-- 본문 -->
   <main>
-    <section class="m_top">
-      <article id="m_top_1">
-        <img src="./img/banner_01.png" alt="main_banner">
+    <section>
+      <article id="title">
+        <h2>2025 이삭토스트 매장 칭찬하기</h2>
+        <p>칭찬하고 싶은 친절미소왕, 깔끔청결왕 매장이 있나요?</p>
+        <p>우리 동네 이삭토스트 매장에 따뜻한 한마디를 남겨주세요!</p>
       </article>
-      <article id="m_top_2">
-        <h1>Enjoy Sweet day!</h1>
-        <h1>Issac Toast</h1>
-        <p>이삭토스트와 함께한 달콤한 기억이 있나요?</p>
-        <h6>한 손에 담긴 든든한 한 끼, 한 입에 퍼지는 미소</h6>
-        <h6>오늘도 한 손에 담긴 따뜻한 토스트로 마음을 전하고 나누며 고객님을 맞이할 준비를 합니다.</h6>
-        <h6>어김없이 따뜻한 토스트가 기다리는 곳, 이삭토스트입니다.</h6>
-        <div id="btn_s"><a href="#">브랜드 스토리 →</a></div>
+      <article id="form">
+        <form onsubmit="return false;">
+          <div id="form1">
+            <div>
+              <label>이름<span>*</span></label>
+              <div><input type="text"></div>
+            </div>
+            <div>
+              <label>연락처<span>*</span></label>
+              <div id="form_phone">
+                <input type="text" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,3)">
+                <span>-</span>
+                <input type="text" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,4)">
+                <span>-</span>
+                <input type="text" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,4)">
+              </div>
+            </div>
+            <div>
+              <label>이메일<span>*</span></label>
+              <div><input type="email"></div>
+            </div>
+            <div>
+              <label>점포명(OO점)<span>*</span></label>
+              <div><input type="text"></div>
+            </div>
+            <div>
+              <label>문의내용<span>*</span></label>
+              <div><textarea spellcheck="false"></textarea></div>
+            </div>
+            <div>
+              <label>이미지 첨부 1</label>
+              <div id="form_img"><button type="button">파일 선택</button><span>선택된 파일 없음</span><p>*jpg, png, pdf 파일 업로드 가능 (20MB 이하)</p></div>
+            </div>
+            <div>
+              <label>이미지 첨부 2</label>
+              <div><button type="button">파일 선택</button><span>선택된 파일 없음</span></div>
+            </div>
+            <div>
+              <label>이미지 첨부 3</label>
+              <div><button type="button">파일 선택</button><span>선택된 파일 없음</span></div>
+            </div>
+            <div>
+              <label>이미지 첨부 4</label>
+              <div><button type="button">파일 선택</button><span>선택된 파일 없음</span></div>
+            </div>
+            <div>
+              <label>이미지 첨부 5</label>
+              <div><button type="button">파일 선택</button><span>선택된 파일 없음</span></div>
+            </div>
+            <div>
+              <label>스팸글 방지<span>*</span></label>
+              <div id="form_safe">
+                <div><img src="./img/norobot_image.png"><input type="text"></div>
+                <label>* 왼쪽의 자동등록방지 코드를 입력하세요. <a>[새로고침]</a></label>
+              </div>
+            </div>
+          </div>
+          <div id="form2">
+            <div>
+              <input type="checkbox">
+              <label>문의를 위한 개인정보 활용을 동의합니다.</label>
+              <label><a href="#"><b>자세히보기</b></a></label>
+            </div>
+            <div><button>등록하기</button></div>
+          </div>
+        </form>
       </article>
-    </section>
-    <section id="main_div_menu">
-      <h1>Isaac Toast Menu</h1>
-      <ul>
-        <li><a href="#">토스트</a></li>
-        <li><a href="#">세트메뉴</a></li>
-        <li><a href="#">사이드</a></li>
-        <li><a href="#">음료</a></li>
-      </ul>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_01_ham_s.png" alt="햄스페셜"><hr><h5>햄 스페셜 토스트</h5><h6>Ham Special</h6></a></div></div>
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_02_baconbest.png" alt="베이컨베스트"><hr><h5>베이컨 베스트</h5><h6>Bacon Best</h6></a></div></div>
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_03_baconpotato.png" alt="베이컨포테이토"><hr><h5>베이컨 포테이토 피자</h5><h6>Bacon Potato Pizza</h6></a></div></div>
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_04_french_hz.png" alt="프렌치햄치즈"><hr><h5>프렌치 햄치즈</h5><h6>French Ham Cheese</h6></a></div></div>
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_05_eggfry_hz.png" alt="햄스페셜"><hr><h5>계란후라이 햄치즈</h5><h6>Fried Egg Ham Cheese</h6></a></div></div>
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_06_deepchz_bacon.png" alt="베이컨베스트"><hr><h5>딥치즈 베이컨</h5><h6>Deep Cheese Bacon</h6></a></div></div>
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_07_cornbacon_eggmayo.png" alt="베이컨포테이토"><hr><h5>콘베이컨 에그마요</h5><h6>Corn Bacon Eggmayo</h6></a></div></div>
-          <div class="swiper-slide"><div><a href=""><img src="./img/toast_08_eggfry_s.png" alt="프렌치햄치즈"><hr><h5>계란후라이 스페셜</h5><h6>Fried Egg Special</h6></a></div></div>
-        </div>
-      </div>
-      <div><span>«———</span><p>DRAG</p><span>———»</span></div>
-      <div id="btn_m1"><a href="#">더보기 →</a></div>
-    </section>
-    <section id="main_div_news">
-      <div>
-        <h1>Isaac Toast News</h1>
-        <ul>
-          <li><a href="#">전체</a></li>
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">이벤트</a></li>
-        </ul>
-        <div id="main_div_news_img">
-          <figure><a href="#"><img src="./img/card1.png" alt="카드배너1"><h5>복숭아잼 소스 무료 추가!</h5><h6>2025-06-18</h6></a></figure>
-          <figure><a href="#"><img src="./img/card2.png" alt="카드배너2"><h5>복숭아잼 예약 주문 이벤트</h5><h6>2025-06-17</h6></a></figure>
-          <figure><a href="#"><img src="./img/card3.png" alt="카드배너3"><h5>내가 가장 좋아하는 계란은?</h5><h6>2025-04-28</h6></a></figure>
-        </div>
-      </div>
-    </section>
-    <section id="main_div_with">
-      <div>
-        <img id="main_div_with1" src="./img/banner_09.png" alt="banner_09">
-        <img id="main_div_with2" src="./img/banner_08.png" alt="banner_08">
-        <div id="main_div_with3">
-          <h1>with<br>Issac Toast</h1>
-          <p>이삭토스트와 달콤한 동행을 함께할<br>가맹점주님을 모집합니다.</p>
-        </div>
-        <div id="btn_div_with"><a href="#">가맹 문의하기 →</a></div>
-      </div>
     </section>
   </main>
-  
-  <!-- 하단 -->
+
+  <!-- 하단부 -->
   <footer>
     <div class="f_wrap">
       <ul>
@@ -181,7 +192,6 @@
   </aside>
 
   <!-- 스크립트 -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+main{
+  padding-top: 180px;
+}
+
+#title{
+  padding-bottom: 50px; text-align: center;
+  h2{margin-bottom: 20px;}
+  p{margin: 0; margin-bottom: 5px; font-size: 20px;}
+}
+
+#form{
+  border-top-left-radius: 20px; border-top-right-radius: 20px;
+  box-shadow: -1px 1px 10px lightgray;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:1025px){
+  #form{width: 880px;}
+  #form1{padding: 60px 90px 40px 90px;}
+  #form1 > div{
+    display: flex; flex-direction: row; align-items: center;
+    label{margin-left: 0;}
+    > div{border-left: 1px solid lightgray;}
+    > div input,textarea{width: 93%; padding-left: 30px;}
+  }
+  #form2{padding-bottom: 150px;}
+}
+@media screen and (max-width:1024px){
+  #form{width: 85%;}
+  #form1{padding: 50px;}
+  #form1 > div{
+    display: flex; flex-direction: column; gap: 5px;
+    label{margin-left: 10px; margin-bottom: 5px;}
+    > div{border: none}
+    > div input,textarea{width: 96%; padding-left: 10px;}
+  }
+  #form2{padding-bottom: 80px;}
+}
+
+#form1 > div{
+  width: 100%; padding: 20px 0; border-bottom: 1px solid lightgray;
+  label{
+    font-size: 18px; flex: 1;
+    span{margin-left: 3px; color: red; font-size: 14px; font-weight: bold; position: relative; bottom: 2px;}
+  }
+  > div{
+    flex: 4;
+    input{border: none; color: dimgray; font-size: 16px; line-height: 120%;}
+    input:focus{outline: none;}
+    textarea{background-color: transparent; width: 93%; min-height: 60px; border: none; color: dimgray; font-size: 16px; font-family: inherit; resize: vertical;}
+    textarea:focus{outline: none;}
+    button{margin-left: 28px;}
+    span{margin-left: 5px; color: dimgray; font-size: 15px;}
+  }
+}
+#form_phone{
+  display: flex;
+  input{padding-left: 0px !important; text-align: center;}
+}
+#form_img{
+  position: relative;
+  p{
+    margin: 0; color: dimgray; font-size: 14px;
+    position: absolute; right: 10px; bottom: 5px;
+  }
+}
+#form_safe{
+  div{
+    margin-bottom: 10px; padding-left: 30px; display: flex; align-items: center;
+    img{height: 30px;}
+    input{
+      border: 1px solid lightgray !important; box-sizing: border-box;
+      width: 200px !important; height: 30px !important; margin-left: 10px; padding-left: 10px !important; font-size: 15px !important;
+    }
+  }
+  label{margin-left: 30px !important; color: dimgray; font-size: 15px !important; }
+  label a{color: dimgray; cursor: pointer;}
+  label a:hover{color: #ee5800;}
+}
+#form2{
+  text-align: center;
+  div:nth-child(1){
+    display: flex; justify-content: center; align-items: center; gap: 3px;
+    input{width: 16px; height: 16px; accent-color: #ee5800;}
+    label{color: dimgray;}
+    label a{padding-bottom: 1px; border-bottom: 2px solid black;}
+  }
+  div:nth-child(2){
+    margin-top: 40px;
+    button{
+      background-color: white; border: 2px solid black; border-radius: 50px;
+      width: 170px; padding: 10px 25px;
+      font-size: 16px; cursor: pointer;
+      transition: all 0.5s ease;
+    }
+    button:hover{background-color: #ee5800; border-color: #ee5800; color: white; font-weight: bold;}
+  }
+}

@@ -1,169 +1,163 @@
-/* media 반응형 스타일 */
+/* media */
 @media screen and (min-width:1440px){
-    #main_div_with2{width: 700px;}
-    #main_div_with3{top: 20%;}
-    #main_div_with3 p{font-size: 1.4rem;}
-    #btn_div_with{bottom: 20%;}
+  #main_div_with2{width: 700px;}
+  #main_div_with3{top: 20%;}
+  #main_div_with3 p{font-size: 22px;}
+  #btn_div_with{bottom: 20%;}
 }
 @media screen and (max-width:1440px){
-    #main_div_with2{width: 700px;}
-    #main_div_with3{top: 15%;}
-    #main_div_with3 h1{font-size: 3.8rem;}
-    #main_div_with3 p{font-size: 1.2rem;}
-    #btn_div_with{bottom: 15%;}
+  #main_div_with2{width: 700px;}
+  #main_div_with3{top: 15%;}
+  #main_div_with3 h1{font-size: 60px;}
+  #main_div_with3 p{font-size: 19px;}
+  #btn_div_with{bottom: 15%;}
 }
 @media screen and (max-width:1280px){
-    #main_div_with2{width: 54%;}
-    #main_div_with3 h1{font-size: 3.6rem;}
-    #main_div_with3 p{font-size: 1rem;}
-    .swiper-slide div h6{font-size: 0.9rem;}
+  #main_div_with2{width: 54%;}
+  #main_div_with3 h1{font-size: 50px;}
+  #main_div_with3 p{font-size: 16px;}
+  .swiper-slide div h6{font-size: 15px;}
 }
 @media screen and (max-width:1024px){
-    #main_div_with3 p{display: none;}
-    .swiper-slide div h5{font-size: 0.9rem;}
-    .swiper-slide div h6{font-size: 0.8rem;}
+  #main_div_with3 p{display: none;}
+  .swiper-slide div h5{font-size: 15px;}
+  .swiper-slide div h6{font-size: 13px;}
+  #main_div_news_img h5,h6{font-size: 15px;}
 }
 
 
-/* 메인 메뉴 스타일 */
+/* main */
 main{
-    clear: both;
-    text-align: center;
-    position: relative;
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
-
-/* 배너 & 소개문 */
+/* 배너 */
 .m_top{
-    clear: both; text-align: center; padding-top: 100px;
-    h1{margin: 40px auto; color: #ee5800;}
-    p{font-size: 22px; font-weight: bold;}
+  padding-top: 100px; text-align: center;
+  h1{margin: 40px auto; color: #ee5800;}
+  p{font-size: 22px; font-weight: bold;}
 }
 #m_top_1 img{width: 100%;}
 #m_top_2{padding: 150px 0; line-height: 170%;}
 #btn_s{margin-top: 50px;}
 #btn_s a{
-    width: 170px; padding: 10px 25px;
-    border-radius: 50px; border: 2px solid black;
-    background-color: white;
-    font-size: 16px;
-    transition: all 0.5s ease;
+  background-color: white; border: 2px solid black; border-radius: 50px;
+  width: 170px; padding: 10px 25px;
+  font-size: 16px;
+  transition: all 0.5s ease;
 }
 #btn_s a:hover{
-    border-color: #ee5800; background-color: #ee5800; color: white;
+  background-color: #ee5800; border-color: #ee5800; color: white;
 }
 
-
-/* 메뉴 스와이퍼 */
+/* 메뉴 */
 #main_div_menu{
-    background-color: #ee5800; padding: 80px 10%;
-    h1{color: white;}
-    span{color: white;}
-    p{color: white; font-size: 0.9rem; display: inline-block; margin: 30px 20px;}
+  background-color: #ee5800; padding: 80px 10%;
+  h1{color: white;}
+  span{color: white;}
+  p{color: white; font-size: 15px; display: inline-block; margin: 30px 20px;}
 }
 #main_div_menu ul{
-    list-style: none; margin-bottom: 30px; padding: 0;
+  list-style: none; margin-bottom: 30px; padding: 0;
 }
 #main_div_menu ul li{
-    display: inline-block; margin: 0px 5px;
-    font-size: 18px; font-weight: bold; color: lightgray;
-    a{  border-radius: 30px;
-        padding: 10px 20px;
-        display: inline-block;
-        color: rgba(255, 255, 255, 0.75);
-        transition: all 0.5s ease;
-    }
-    a:hover{color: white;}
+  display: inline-block; margin: 0px 5px;
+  font-size: 18px; font-weight: bold; color: lightgray;
+  a{
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.5s ease;
+  }
+  a:hover{color: white;}
 }
 #main_div_menu ul li:nth-child(1){
-    border-radius: 30px; background-color: rgba(0, 0, 0, 0.2);
-    a{color: white;}
+  border-radius: 30px; background-color: rgba(0, 0, 0, 0.2);
+  a{color: white;}
 }
 .swiper{width: 100%; height: 100%;}
 .swiper-slide{
-    background: white; border-radius: 20px;
-    display: flex; justify-content: center; align-items: center; text-align: center; overflow: hidden;
+  background: white; border-radius: 20px;
+  display: flex; justify-content: center; align-items: center; text-align: center; overflow: hidden;
 }
 .swiper-slide div{
-    hr{width: 80%; border: none; border-top: 1px solid lightgray; margin: 0 auto;}
-    h5{padding-top: 10%;}
-    h6{padding-bottom: 10%;}
-    img{width: 80%; margin: 0 auto;}
+  hr{width: 80%; border: none; border-top: 1px solid lightgray; margin: 0 auto;}
+  h5{padding-top: 10%;}
+  h6{padding-bottom: 10%;}
+  img{width: 80%; margin: 0 auto;}
 }
 .swiper-slide:hover img{
-    transform: scale(1.1);
-    transition: all 1s ease;
+  transform: scale(1.1);
+  transition: all 1s ease;
 }
 #btn_m1{margin-top: 20px;}
 #btn_m1 a{
-    width: 170px; padding: 10px 25px;
-    border-radius: 50px; border: 2px solid white; color: white;
-    font-size: 16px;
-    transition: all 0.5s ease;
+  width: 170px; padding: 10px 25px;
+  border-radius: 50px; border: 2px solid white; color: white;
+  font-size: 16px;
+  transition: all 0.5s ease;
 }
 #btn_m1 a:hover{
-    background-color: white; color: #ee5800; font-weight: bold;
+  background-color: white; color: #ee5800; font-weight: bold;
 }
 
-
-/* 소식 스와이퍼 */
+/* 소식 */
 #main_div_news{
-    padding: 80px 0px;
+  width: 100%; padding: 80px 0;
+  > div{padding: 0 2%;}
 }
 #main_div_news ul{
-    list-style: none; padding: 0;
+  padding: 0; list-style: none;
 }
 #main_div_news ul li{
-    display: inline-block;
-    margin: 0px 5px;
-    font-size: 18px; font-weight: bold; color: gray;
-    a{  border-radius: 30px;
-        padding: 10px 20px;
-        display: inline-block;
-        color: gray;
-        transition: all 0.5s ease;
-    }
-    a:hover{color: black;}
+  margin: 0px 5px;
+  color: gray; font-size: 18px; font-weight: bold;
+  display: inline-block;
+  a{border-radius: 30px; padding: 10px 20px; color: gray; transition: all 0.5s ease; display: inline-block;}
+  a:hover{color: black;}
 }
 #main_div_news ul li:nth-child(1){
-    border-radius: 30px;
-    background-color: #ee5800;
-    a{color: white;}
+  background-color: #ee5800; border-radius: 30px;
+  a{color: white;}
 }
-#main_div_news figure{
-    /* border: 1px solid red; */
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.2);
+#main_div_news_img{
+  display: flex; justify-content: center;
+  figure{
+    border-radius: 20px; box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.2);
+    margin: 30px 5px; padding-bottom: 20px; overflow: hidden;
     display: inline-block;
-    margin: 30px 5px;
-    padding-bottom: 20px;
-    overflow: hidden;
     img{width: 100%; margin-bottom: 15px;}
-}
-#main_div_news_img h5, #main_div_news_img h6{
-    text-align: left; padding-left: 30px;
+  }
+  h5,h6{
+    padding-left: 25px; text-align: left;
+  }
 }
 
-
-/* 가맹 스와이퍼 */
-#main_div_with{position: relative; background-color: #ffeebb;}
+/* 가맹 */
+#main_div_with{
+  position: relative;
+  > div{width: 100%; display: flex; position: relative; img{height: 100%;}}
+}
 #main_div_with1{width: 100%;}
-#main_div_with2{height: 100%; position: absolute; left: 0px;}
+#main_div_with2{position: absolute; left: 0px; top: 0px;}
 #main_div_with3{
-    position: absolute; left: 5%;;
-    color: white; text-align: left;
-    h1{line-height: 100%;}
-    p{line-height: 150%;}
+  color: white; text-align: left;
+  position: absolute; left: 5%;
+  h1{line-height: 100%;}
+  p{line-height: 150%;}
 }
 #btn_div_with{
-    position: absolute; left: 5%;
+  position: absolute; left: 5%;
 }
 #btn_div_with a{
-    width: 170px; padding: 10px 25px;
-    border-radius: 50px; border: 2px solid white; color: white;
-    font-size: 16px;
-    transition: all 0.5s ease;
+  width: 170px; padding: 10px 25px;
+  border-radius: 50px; border: 2px solid white; color: white;
+  font-size: 16px;
+  transition: all 0.5s ease;
 }
 #btn_div_with a:hover{
-    background-color: white; color: #ee5800; font-weight: bold;
+  background-color: white; color: #ee5800; font-weight: bold;
 }
